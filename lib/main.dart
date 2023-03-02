@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animation_one/home_screen.dart';
 import 'package:flutter_animation_one/second_screen/second_screen.dart';
+import 'package:flutter_animation_one/third_screen/third_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
       darkTheme: ThemeData(brightness: Brightness.dark),
       themeMode: ThemeMode.dark,
       debugShowCheckedModeBanner: false,
-      home:SecondScreen(),
+      home:ThirdScreen(),
     );
   }
 }
