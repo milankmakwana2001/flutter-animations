@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 class FourthScreen extends StatefulWidget {
   const FourthScreen({Key? key}) : super(key: key);
@@ -31,7 +32,7 @@ class _FourthScreenState extends State<FourthScreen>
     ).animate(
       CurvedAnimation(
         parent: _controller,
-        curve: Curves.linearToEaseOut,
+        curve: Curves.bounceIn,
       ),
     );
   }
@@ -68,6 +69,7 @@ class _FourthScreenState extends State<FourthScreen>
                     isEnabled = !isEnabled;
                   }
                   print(isEnabled.toString());
+                  HapticFeedback.heavyImpact();
                 },
                 child: Container(
                   height: 20,
