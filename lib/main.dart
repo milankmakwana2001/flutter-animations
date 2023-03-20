@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:flutter_animation_one/fourth_screen/fourth_screen.dart';
 import 'package:flutter_animation_one/home_screen.dart';
 import 'package:flutter_animation_one/second_screen/second_screen.dart';
 import 'package:flutter_animation_one/third_screen/third_screen.dart';
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
       darkTheme: ThemeData(brightness: Brightness.dark),
       themeMode: ThemeMode.dark,
       debugShowCheckedModeBanner: false,
-      home:ThirdScreen(),
+      home:FourthScreen(),
     );
   }
 }
