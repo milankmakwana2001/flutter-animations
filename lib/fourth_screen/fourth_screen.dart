@@ -68,8 +68,12 @@ class _FourthScreenState extends State<FourthScreen>
                     await _controller.reverse();
                     isEnabled = !isEnabled;
                   }
+
+                  if(isEnabled){
+                    HapticFeedback.heavyImpact();
+                  }
                   print(isEnabled.toString());
-                  HapticFeedback.heavyImpact();
+
                 },
                 child: Container(
                   height: 20,
